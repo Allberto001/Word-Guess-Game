@@ -1,6 +1,5 @@
-var heroes = ["Batman","Superman","GreenLantern","Flash","WonderWoman","Aquaman"];
-var wrongGuess = [];
-var rightGuess = [];
+var heroes = ["batman","superman","greenLantern","flash","wonderwoman","aquaman"];
+
 
 // to get random word from my array
 var randomWord = Math.floor(Math.random() * heroes.length);
@@ -19,20 +18,32 @@ var Underscores = () =>{
 console.log(Underscores());
 
 // get the letters that user is inputing
-document.addEventListener("keypress", (event) => {
-    var keyletter = String.fromCharCode(event.keyCode);
+var rightGuess = [];
+var wrongGuess = [];
 
-    if( chosenWord.indexOf(keyletter) > -1){
-        rightGuess.push(keyletter);
-        underScore[chosenWord.indexOf(keyletter)] = keyletter;
-        
+document.addEventListener("keypress", (event) => {
+    var key = String.fromCharCode(event.keyCode);
+   //for testing console.log(chosenWord.indexOf(key));
+
+    if(chosenWord.indexOf(key) > -1){
+      //for testing console.log(true);
+      // so the below commands will push the keys or letters into the rightGuess array 
+      rightGuess.push(key);
+      underScore[chosenWord.indexOf(key)] = key;
+      //testing console.log(underScore);
     }
     if(underScore.join("") == chosenWord){
         alert("you win");
+    } 
+    else{
+      // same thing as the above commands but pushing it into a different array in this case being a wrongGuess array i created  
+        wrongGuess.push(key);
+        
     }
-   else{
-       wrongGuess.push(keyletter);
-       console.log(wrongGuess);
-   }
   
-})
+});
+
+// to put it into myactual webpage
+var userunderscore = document.getElementsByClassName("underscores");
+
+userunderscore[0].innerHTML = Underscores().join("");
