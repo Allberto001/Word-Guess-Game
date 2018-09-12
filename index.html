@@ -1,35 +1,59 @@
 <!DOCTYPE html>
 <html lang="en-us">
+
 <head>
-    <meta charset="utf-8" >
-  
+    <meta charset="utf-8">
+
     <title>Hang Man</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" >
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" >
-    <script type="text/javascript" src="assets/Javascript/game.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css">
+    
 </head>
+
 <body>
     <header class="header">
-    <h1>Heroes of the DC Universe</h1>
+        <h1>Heroes of the DC Universe</h1>
     </header>
 
     <h2 id="h2">Guess the Hero</h2>
 
     <div class="rules">
         <h3>Rules</h3>
-    <p>The rules are simple choose any letter from A-Z but choose wisely.
-    If by any chance you chose a letter that is not in the name of the given hero
-    then you will be one step closer to defeat but guess correctly and you might be victorious.  </p>
-  
-   </div>
+        <p>The rules are simple choose any letter from A-Z but choose wisely. If by any chance you chose a letter that is not
+            in the name of the given hero then you will be one step closer to defeat but guess correctly and you might be
+            victorious. </p>
 
-   <div class="underscores"><H3>You have ten chances</H3></div>
+    </div>
 
-   <div class="wrongGuess">
-       <h3>Wrong Guess</h3>
-   </div>
+    <div class="mainbox">
+       <div id="underscores">_ _ _ _ _ _</div> 
+    </div>
 
-   
+    <div class="wrongguessbox">
+        <h3>Wrong Guess</h3>
+        <div id="wrongguess">
+        </div>
+    </div>
+
+    <div class="countdown">
+        <h3>Countdown Til Your Defeat</h3>
+       <div id ="countdownnumber">10</div>
+    </div>
+
+    <div class="wins">
+        <h3>Victories</h3>
+       <div id ="wincounter">0</div>
+    </div>
+
+    <div class="loses">
+        <h3>Defeats</h3>
+       <div id ="losscounter">0</div>
+    </div>
+
+
+
+    <script type="text/javascript" src="assets/Javascript/game.js"></script>
 </body>
+
 </html>
