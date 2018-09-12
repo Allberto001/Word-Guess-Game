@@ -1,4 +1,4 @@
-var heroes = ["batman","superman","greenLantern","flash","wonderwoman","aquaman"];
+var heroes = ["batman","superman","greenlantern","flash","wonderwoman","aquaman"];
 var chosenWord = "";
 var letters = [];
 var numberOfBlanks = 0;
