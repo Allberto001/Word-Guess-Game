@@ -54,7 +54,7 @@
      text-decoration:underline;
   
     }
-   .underscores{
+   .mainbox{
     background-color: white;
     margin-top: 20px;
     margin-left: 20px;
@@ -68,7 +68,7 @@
     width: 500px;
 
    }
-   .wrongGuess{
+   .wrongguessbox{
     background-color: white;
     margin-top: 20px;
     margin-left: 20px;
@@ -81,4 +81,59 @@
     float: left;
     width: 350px;
     
+}
+#wrongguess{
+  color:red;
+  font-size: 20px;
+}
+.countdown{
+  background-color: white;
+    margin-top: 20px;
+    margin-right: 150px;
+    border: 1px solid;
+    padding: 20px;
+    box-shadow: 5px 10px rgb(129, 10, 10);
+    font-family: comic sans ms;
+    text-align: center;
+    line-height:25px;
+    float: right;
+    width: 200px;
+}
+#countdownnumber{
+  color:red;
+  font-size: 20px;
+}
+.wins{
+  background-color: white;
+    margin-top: 20px;
+    margin-right: 250px;
+    border: 1px solid;
+    padding: 20px;
+    box-shadow: 5px 10px rgb(129, 10, 10);
+    font-family: comic sans ms;
+    text-align: center;
+    line-height:25px;
+    float: right;
+    width: 200px;
+}
+#wincounter{
+  color:red;
+  font-size: 20px;
+}
+.loses{
+  background-color: white;
+    margin-top: 20px;
+    margin-right: 20px;
+    border: 1px solid;
+    padding: 20px;
+    box-shadow: 5px 10px rgb(129, 10, 10);
+    font-family: comic sans ms;
+    text-align: center;
+    line-height:25px;
+    float: right;
+    width: 200px;
+}
+#losscounter{
+  color:red;
+  font-size: 20px;
 }
